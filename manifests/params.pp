@@ -3,7 +3,7 @@ class golang::params {
 
   $from_repo     = true
   $from_package  = false
-  
+
   validate_bool($from_repo)
 
 
@@ -16,9 +16,9 @@ class golang::params {
     }
 
   else {
-  $base_dir        = '/usr/local/go'
-  $package_version = 'present'
-  $goroot          = '$GOPATH/bin:$PATH'
-  $workdir         = '/usr/local/go'
+    $base_dir        = '/usr/lib/golang/'
+    $package_version = 'present'
+    $goroot          = '$GOPATH/bin:$PATH'
+    $workdir         = '/usr/lib/golang/'
   }
 }
